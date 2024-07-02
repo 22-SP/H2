@@ -1,0 +1,122 @@
+/* Basic styling for body and container */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+#trivia-container {
+    text-align: center;
+    max-width: 800px;
+}
+
+/* Styling for legend buttons */
+#legend {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.category-button {
+    padding: 10px 20px;
+    margin: 5px;
+    border: none;
+    cursor: pointer;
+    color: #fff;
+    font-size: 14px;
+    border-radius: 5px;
+    width: 140px; /* Set a fixed width for consistency */
+    height: 80px; /* Set a fixed height for all buttons */
+    white-space: normal; /* Allow text to wrap */
+    text-align: center; /* Center align text */
+}
+
+/* Specific background colors for different categories */
+[data-category="11"] {
+    background-color: #f44336; /* Film */
+}
+[data-category="12"] {
+    background-color: #9c27b0; /* Music */
+}
+[data-category="14"] {
+    background-color: #3f51b5; /* Television */
+}
+[data-category="17"] {
+    background-color: #4caf50; /* Science & Nature */
+}
+[data-category="21"] {
+    background-color: #ff9800; /* Sports */
+}
+[data-category="22"] {
+    background-color: #2196f3; /* Geography */
+}
+[data-category="23"] {
+    background-color: #795548; /* History */
+}
+
+/* Styling for modal */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 400px;
+    border-radius: 5px;
+    position: relative;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Styling for questions */
+.question {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+/* Styling for answer options */
+.answers {
+    margin-top: 10px;
+}
+
+.answers label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.answers input {
+    margin-right: 5px;
+}
